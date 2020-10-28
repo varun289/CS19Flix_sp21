@@ -2,7 +2,7 @@
   <section class="container">
     <div class="fixed header">
       <i class="material-icons" @click="index = 0">refresh</i>
-      <span>Movie Recommendation</span>
+      <span>CS 19Flix</span>
       <i class="material-icons">tune</i>
     </div>
     <div
@@ -125,7 +125,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  background: #eceff1;
+  background: #16213e;
   width: 100%;
   height: 100vh;
 }
@@ -136,21 +136,21 @@ export default {
   z-index: 0;
   top: 0;
   left: 0;
-  color: white;
+  color: #e94560;
   text-align: center;
-  font-style: italic;
-  font-family: 'Engagement', cursive;
-  background: #c24a13;
-  background: -webkit-linear-gradient(to top, #9b520d, #e48212);
-  background: linear-gradient(to top, #b9690d, #f0941c);
+  font-style: normal;
+  font-family: 'Blippo', fantasy;
+  background: #e94560;
+  background: -webkit-linear-gradient(to top, #0f3460, #0f3460);
+  background: linear-gradient(to top, #0f3460, #0f3460);
   clip-path: polygon(0 1%, 100% 0%, 100% 76%, 0 89%);
   display: flex;
   justify-content: space-between;
   span {
     display: block;
-    font-size: 4rem;
+    font-size: 8rem;
     padding-top: 2rem;
-    text-shadow: 1px 1px 1px red;
+    text-shadow: 1px 1px 1px black;
   }
   i {
     padding: 24px;
