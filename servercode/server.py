@@ -1,22 +1,15 @@
-import flask, json
+import flask, json, torch
 from random import Random
 from flask import request, jsonify
-from fastai.basics import load_learner
+from fastai.tabular.all import *
+from fastai.collab import *
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 learn = load_learner('./ratings_model(1).pkl')
 def predict(userId, movieId):
-    return learn.model(tensor([[userId, movieId]]))
-
-@app.route('/api/predict', methods=['GET'])
-def make():
-    data = {
-        "uiiu": 45,
-        "kofe": 43
-    }
-    return jsonify(data), 200
+    return learn.model(tensor([[userId, movieId]])).item()
 
 @app.route('/api/predictor', methods=['POST'])
 def makePrediction():
