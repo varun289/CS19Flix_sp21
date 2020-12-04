@@ -1,11 +1,13 @@
 import flask, json, torch
+from flask_cors import CORS
 from random import Random
 from flask import request, jsonify
 from fastai.tabular.all import *
 from fastai.collab import *
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = True
+cors = CORS(app)
+app.config["DEBUG"] = False
 
 learn = load_learner('./ratings_model(1).pkl')
 def predict(userId, movieId):
@@ -14,11 +16,9 @@ def predict(userId, movieId):
 @app.route('/api/predictor', methods=['POST'])
 def makePrediction():
     movies = dict()
-    body = json.loads(request.json)
-    for element in body:
-        user = body[element]["userId"]
-        movie = body[element]["movieId"]
-        movies[element] = predict(user, movie)
+    user = request.data["userId"]
+    movie = request.data["movieId"]
+    movies["rating"] = predict(user, movie)
     return jsonify(movies), 200
 
 
