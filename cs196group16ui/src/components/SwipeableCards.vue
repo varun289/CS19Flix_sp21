@@ -86,10 +86,16 @@ export default {
         draggedUp: EVENTS.SKIP
       },
       cards: [
-        { src: '2001 A Space Odyssey.jpg', name: '2001 A Space Odyssey', rating: 8.3 },
-        { src: 'Alien.jpg', name: 'Alien', rating: 8.4 },
-        { src: 'Planet of the Apes.jpg', name: 'Planet of the Apes', rating: 8 },
-        { src: 'The Terminator.jpg', name: 'The Terminator', rating: 8 },
+        { src: 'Forrest_Gump_poster.jpg', name: 'Forrest Gump', rating: 8.3 },
+        { src: 'Aladdin.jpg', name: 'Aladdin', rating: 8.4 },
+        { src: 'LionKing.jpg', name: 'The Lion King', rating: 8 },
+        { src: 'BeautyAndTheBeast.jpg', name: 'Beauty and the Beast', rating: 8 },
+        { src: 'Speed.jpg', name: 'Speed', rating: 8 },
+        { src: 'PrettyWoman.jpg', name: 'Pretty Woman', rating: 8 },
+        { src: 'TheMask.jpg', name: 'The Mask', rating: 8 },
+        { src: 'HomeAlone.jpg', name: 'Home Alone', rating: 8 },
+        { src: 'Miracle.jpg', name: 'Miracle on 34th Street', rating: 8 },
+        { src: 'Ace.jpg', name: 'Ace Ventura: Pet Detective', rating: 8 },
       ]
     }
   },
