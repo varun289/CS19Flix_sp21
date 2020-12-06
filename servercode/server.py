@@ -16,12 +16,13 @@ def predict(userId, movieId):
 @app.route('/api/predictor', methods=['POST'])
 def makePrediction():
     movies = dict()
-    user = request.data["userId"]
-    movie = request.data["movieId"]
-    movies["rating"] = predict(user, movie)
+    body = request.json
+    user = body["userId"]
+    movie = body["movieId"]
+    movies["rating"] = round(predict(user, movie), 1)
     return jsonify(movies), 200
 
 
 if __name__ == '__main__':
-    app.run()  
+    app.run()
 
