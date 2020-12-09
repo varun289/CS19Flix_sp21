@@ -1,5 +1,5 @@
 # CS19Flix
-#What problem is your project trying to solve?
+What problem is your project trying to solve?
 
 Deciding which movie to watch, game to play, or show to binge is not as straightforward as it seems in 2020. People have more free time to consume entertainment than ever before, as well as more entertainment options, yet there is no unified interface to access recommendations on content curated from multiple services, etc.
 
