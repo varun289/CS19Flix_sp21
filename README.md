@@ -19,8 +19,11 @@ Dataset used for the project: https://www.kaggle.com/rounakbanik/the-movies-data
 ### Master Branch: 
 
 **Frontend folder** contains the code for the swiping feature (seperate from movie list final product)
-To Run: Yarn install
-	  Yarn serve
+To Run:
+```
+yarn install
+yarn serve
+```
 
 **Notebooks folder** contains a collaborative filtering file that trains and exports the model. Also contains a file to create a csv with all the movie reviews from users that will be used in the future for the NLP model. 
 To Run: Google Collab
@@ -31,17 +34,23 @@ Ignore Backend folder (utilized in different branch)
 ### Movie List Branch:
 **Frontend folder** contains code to view list of movies generated from the TMDB movies API and the predicted ratings generated from the collaborative filtering model
 Make sure to run the server before running this.
-To Run: Yarn install
-	  Yarn serve
+To Run: 
+```
+yarn install
+yarn serve
+```
 
 
 **Backend folder** contains the code for the server to run. Server routes API POST requests and returns data to the UI.
 Ignore Procfile (it was for deploying the server, but we ran into issues with that).
 To Run: 
 Open Backend Folder in code editor
+```
 pip install -r requirements.txt
-   	  pip install IPython if needed
+pip install IPython if needed
+```
 Run server.py
+
 Ignore list-view folder: is the initial clean looking list we tried to incorporate API request with but doesn’t work
 
 (ignore the getPost and storeData branches)
