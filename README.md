@@ -32,7 +32,7 @@ Ignore Backend folder (utilized in different branch)
 
 
 ### Movie List Branch:
-**Frontend folder** contains code to view list of movies generated from the TMDB movies API and the predicted ratings generated from the collaborative filtering model
+**Frontend folder** contains code to view list of movies generated from the TMDB movies API and the predicted ratings generated from the collaborative filtering model.
 Make sure to run the server before running this.
 To Run: 
 ```
