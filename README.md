@@ -14,7 +14,7 @@ Most recommender systems today are platform-specific (example: Netflix and Amazo
 
 Dataset used for the project: https://www.kaggle.com/rounakbanik/the-movies-dataset
 
-### Branches
+## Branches
 
 ### Master Branch: 
 
