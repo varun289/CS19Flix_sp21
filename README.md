@@ -5,7 +5,7 @@ Deciding which movie to watch, game to play, or show to binge is not as straight
 
 Most recommender systems today are platform-specific (example: Netflix and Amazon). However, due to the large number of entertainment sources, these recommender systems don’t recommend where users should be allocating their time to consume media.
 
-# TECH STACK
+### TECH STACK
 **User Interface** - Vue JS is a front-end framework. It is great to use for simple web pages.
 
 **Server** - We used a python flask server to provide fastAI data to the front-end
